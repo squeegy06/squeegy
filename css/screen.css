@@ -1,22 +1,22 @@
 body{
 	background-color: #1e1e1e;
+	background: url('/img/background2.png') #1e1e1e no-repeat 12px 12px fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	padding: 20px 0 20px 0;
 }
 
 #container{
 	max-width: 780px;
-	background: url('/img/background2.png') #1e1e1e no-repeat 0px 12px fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	color: #d1d1d1;
 }
 
 #content{
 	margin: auto 15px;
 	border-radius: 6px;
-	background-color: rgba(30, 30, 30, 0.8)
+	background-color: rgba(30, 30, 30, 0.9)
 }
 
 .header{
@@ -26,6 +26,6 @@ body{
 }
 
 .jumbotron{
-	background-color: rgba(30, 30, 30, 0.8);
+	background-color: rgba(30, 30, 30, 0.9);
 	text-align: center;
 }
