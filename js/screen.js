@@ -31,7 +31,7 @@ $('.navbar-collapse ul li a').click(function() {
 
 // Google Maps Scripts
 // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
+//google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
     // Basic options for a simple Google Map
@@ -176,3 +176,34 @@ function init() {
         icon: image
     });
 }
+
+$(function(){
+    $('#projects').on('click', '.projects-list li', function(event){
+        event.preventDefault();
+
+        var parent = $($(this).data('parent'));
+        var target = $("#" + $(this).attr('aria-controls'));
+
+        var showing = parent.find('.collapse.in');
+        if(showing.length > 0)
+        {
+            showing.each(function(){
+                if($(this).attr('id') === target.attr('id'))
+                {
+                    $(this).collapse('hide');
+                }else
+                {
+                    $(this).on('hidden.bs.collapse', function(event){
+                        event.preventDefault();
+                        target.collapse('show');
+                        $(this).off('hidden.bs.collapse');
+                    }).collapse('hide');
+                }
+            });
+        }
+        else
+        {
+            target.collapse('show');
+        }
+    })
+});

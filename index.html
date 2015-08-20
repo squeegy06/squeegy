@@ -99,8 +99,34 @@
     <section id="projects" class="content-section text-center">
         <div class="projects-section">
             <div class="container">
+                <ul class="projects-list">
+                    <li data-parent="#projects" aria-expanded="false" aria-controls="strife">
+                        <img class="img-responsive" src="/img/strife.png" alt="Strife Strife.com - S2Games - Kalamazoo, MI" />
+                    </li>
+                    <li data-parent="#projects" aria-expanded="false" aria-controls="spiritdental">
+                        <img class="img-responsive" src="/img/spirit.png" alt="Spiritdental.com - CorePHP - Battle Creek, MI"/>
+                    </li>
+                </ul>
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Coming Soon</h2>
+                    <div class="collapse" id="strife">
+                        <div class="well">
+                            <h4>Strife - S2 Games - Kalamazoo, MI</h4>
+                            <p>In August 2013 I had the thrilling opportunity to begin my career as a programmer and fulfill a life long dream of working for a game studio. I began work at <a href="http://s2games.com/" target="_blank" >S2 Games</a> as an intern and quickly proved myself moving up to full time staff only two short months later.  </p>
+                            <p>As a programmer at S2 I worked with an amazing team developing their backend RESTful API as we marched toward the launch of our next generation MOBA, <a href="http://strife.com/" target="_blank" >Strife</a>.  My responsibilities included working with their design team to build our player portal and connect it with Strife’s database, maintaining and adding new tools and features to the internal administration panel, developing new API tools and endpoints for Strife to utilize, and being part of a rotating on-call staff available 24/7 to troubleshoot and fix bugs when they arose.  I was lead in developing tools for storing game configurations in the cloud and establishing a refer-a-friend system.</p>
+                            <p>Working in a large development team meant communication was important.  Regular meetings, and face to face conversations helped ensure we knew what each and every person was working on.  We also utilized Jira for development tracking.  To make myself stand out it was important that I had my hands in as much as possible.  Having not just knowledge but practical experience in many areas of Strife’s systems ensured that I was a valuable asset capable of resolving problems and developing complete solutions.  Every morning I took the time to read commit notes from the previous day making myself continually aware of changes in the system’s code.</p>
+                            <p>Unfortunately, as any one who’s worked in the game industry can tell you, work is fleeting.  Shortly after launch many of us sadly parted ways with S2 Games.  S2 Games will always hold a special place in my heart.  I hope one day to work with the many, talented individuals again.</p>
+                        </div>
+                    </div>
+                    <div class="collapse" id="spiritdental">
+                        <div class="well">
+                            <h4>Spirit Dental - 'corePHP' - Battle Creek, MI</h4>
+                            <p><a href="https://spiritdental.com/" target="_blank">Spirit Dental</a> was an exciting, open ended project, and it’s success would lead to a wealth of future work.  The goal was to develop a RESTful API that would provide a central connection for many sales sites to query and retrieve insurance plan details and submit customer applications to.  It was also my first project to use a modern PHP framework.</p>
+                            <p>We needed to develop a system that could be easily and infinitely expanded, as not every sales portal would use the same insurance carriers and enrollment processes.  We chose <a href="http://symfony.com/" target="_href">Symfony</a> for it’s bundle system.  Bundles would allow us to separate the base code of the API with other services that would provide the specialized work needed with unique sales portals.  Symfony also has a great library of documentation and an even larger community of bundle creators for us to draw from.  The use of <a href="https://getcomposer.org/" target="_blank">Composer</a> meant I could easily install the application on new servers and be confident it had everything I needed.</p>
+                            <p>My greatest challenge was learning to use Symfony as my previous experiences were in proprietary frameworks developed internally.  Each day was full of discovery, learning about the power PHP has when leveraging many of the modern programming features introduced in php 5.3 and later.  It left me excited for the future with the release of 7.0.</p>
+                            <p>The API presented challenges of it’s own.  Until now, I never realized how complicated insurance was in the United States.  I had to provide a way to configure plans and details right down to individual zip codes as laws could be different not just state to state, but zip to zip.  At the same time I had to provide flexibility to fit into the formats other sales sites required.</p>
+                            <p>This was my first solo project and in the end I was very satisfied with my work.  I look forward to continuing it’s expansion.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,7 +170,7 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/screen.js"></script>
 
 </body>
 
